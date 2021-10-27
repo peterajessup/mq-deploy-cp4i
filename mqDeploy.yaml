@@ -51,7 +51,7 @@ spec:
       - name: trust1
         secret:
           secretName: tls-eris-trust
-            items:
-              - CSQ9.crt
+          items:
+            - CSQ9.crt
   imagePullSecrets:
     - name: ibm-entitlement-key
