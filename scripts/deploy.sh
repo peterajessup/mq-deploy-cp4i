@@ -19,4 +19,4 @@ set -e
 oc create -f mqsc/mqsc.yaml
 
 set -e
-oc apply -f mqDeploy.yaml
+oc create -f mqDeploy.yaml
