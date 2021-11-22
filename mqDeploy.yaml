@@ -37,7 +37,7 @@ spec:
   web:
     enabled: true
   tracing:
-    enabled: false
+    enabled: true
     namespace: ops-dash
   pki:
     keys:
