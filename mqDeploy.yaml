@@ -19,7 +19,7 @@ spec:
         enabled: true
         type: persistent-claim
       queueManager:
-        type: ephemeral
+        type: persistent-claim
       recoveryLogs:
         class: ibmc-file-gold-gid
         enabled: true
