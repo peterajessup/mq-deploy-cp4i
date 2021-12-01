@@ -14,7 +14,7 @@ spec:
     image: cp.icr.io/cp/ibm-mqadvanced-server-integration:9.2.3.0-r1-amd64
     imagePullPolicy: Always
     storage:
-      defaultClass: ibmc-file-gold
+      defaultClass: ibmc-block-gold
       persistedData:
         class: ibmc-file-gold
         enabled: true
