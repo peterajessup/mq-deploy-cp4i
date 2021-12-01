@@ -16,7 +16,7 @@ spec:
     storage:
       defaultClass: default
       persistedData:
-        class: ibmc-block-retain-gold
+        class: ibmc-file-gold-gid
         enabled: true
         type: persistent-claim
       queueManager:
