@@ -25,8 +25,8 @@ spec:
         enabled: true
         type: persistent-claim
     availability:
-      #type: MultiInstance
-      type: SingleInstance
+      type: MultiInstance
+      #type: SingleInstance
       #type: NativeHA
     name: QM1
     mqsc:
@@ -46,7 +46,7 @@ spec:
   web:
     enabled: true
   tracing:
-    enabled: true
+    enabled: false
     namespace: od
   pki:
     keys:
