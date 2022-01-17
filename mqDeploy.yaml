@@ -46,7 +46,7 @@ spec:
   web:
     enabled: true
   tracing:
-    enabled: false
+    enabled: true
     namespace: od
   pki:
     keys:
