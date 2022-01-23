@@ -38,7 +38,7 @@ spec:
   web:
     enabled: true
   tracing:
-    enabled: false
+    enabled: true
     namespace: od
   pki:
     keys:
@@ -56,5 +56,3 @@ spec:
             - CSQ9.crt
   imagePullSecrets:
     - name: ibm-entitlement-key
-  securityContext:
-     supplementalGroups: [99]
