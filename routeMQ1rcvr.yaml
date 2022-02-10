@@ -2,7 +2,7 @@
   apiVersion: route.openshift.io/v1
   metadata:
     name: mq1routercvr 
-    namespace: mq 
+    namespace: ibmmq 
   spec:
     host: toqm1.chl.mq.ibm.com
     to:
