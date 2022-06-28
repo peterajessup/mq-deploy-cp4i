@@ -38,7 +38,7 @@ spec:
   web:
     enabled: true
   tracing:
-    enabled: false
+    enabled: true
     namespace: od
     # collector:
       # image: cp.icr.io/cp/icp4i/od/icp4i-od-collector:2.5.0-amd64@sha256:44460e67780a4166a07a36da10260d9497526afdd899af9ad745ac6197e92ca6
