@@ -30,10 +30,10 @@ spec:
       type: NativeHA
     resources:
       limits:
-        cpu: '2'
+        cpu: '1'
         memory: 2Gi
       requests:
-        cpu: '2'
+        cpu: '1'
         memory: 2Gi
     name: QM1
     mqsc:
