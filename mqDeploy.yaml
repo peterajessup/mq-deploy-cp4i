@@ -14,8 +14,16 @@ spec:
     image: cp.icr.io/cp/ibm-mqadvanced-server-integration:9.2.4.0-r1-amd64
     imagePullPolicy: Always
     storage:
-      queueManager:
+      defaultClass: ibmc-block-gold
+      persistedData:
         enabled: true
+        type: persistent-claim
+      queueManager:
+        type: persistent-claim
+      recoveryLogs:
+        class: ibmc-block-gold
+        enabled: true
+        type: persistent-claim
     availability:
       #type: MultiInstance
       #type: SingleInstance
