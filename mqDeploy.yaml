@@ -28,6 +28,8 @@ spec:
       #type: MultiInstance
       #type: SingleInstance
       type: NativeHA
+    metrics:
+      enabled: true
     resources:
       limits:
         cpu: '4'
