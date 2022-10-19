@@ -4,6 +4,7 @@ metadata:
   name: mq1
   namespace: mq
 spec:
+  mqDashboard: true
   license:
     accept: true
     license: L-RJON-BZFQU2
