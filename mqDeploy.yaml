@@ -54,7 +54,7 @@ spec:
   version: 9.3.0.1-r1
  # version: 9.2.3.0-r1
   web:
-    enabled: true
+    enabled: false
   tracing:
     enabled: false
     namespace: od
