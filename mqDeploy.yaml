@@ -34,10 +34,10 @@ spec:
     resources:
       limits:
         cpu: '1'
-        memory: 8Gi
+        memory: 2Gi
       requests:
         cpu: '1'
-        memory: 8Gi
+        memory: 2Gi
     name: QM1
     mqsc:
     - configMap:
