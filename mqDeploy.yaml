@@ -7,8 +7,8 @@ spec:
   mqDashboard: true
   license:
     accept: true
-    #license: L-RJON-BZFQU2
-    license: L-RJON-CD3JKX
+    license: L-APIG-CAUEBE
+    #license: L-RJON-CD3JKX
     metric: VirtualProcessorCore
     use: NonProduction
   queueManager:
