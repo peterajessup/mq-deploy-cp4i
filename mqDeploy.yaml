@@ -10,7 +10,7 @@ spec:
     license: L-APIG-CAUEBE
     #license: L-RJON-CD3JKX
     metric: VirtualProcessorCore
-    use: NonProduction
+    use: Production
   queueManager:
     #image: cp.icr.io/cp/ibm-mqadvanced-server-integration:9.3.0.1-r1-amd64
     imagePullPolicy: Always
