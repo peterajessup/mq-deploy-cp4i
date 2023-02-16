@@ -7,12 +7,11 @@ spec:
   mqDashboard: true
   license:
     accept: true
-    #license: L-APIG-CAUEBE
-    license: L-RJON-CD3JKX
+    license: L-APIG-CAUEBE
+    #license: L-RJON-CD3JKX
     metric: VirtualProcessorCore
     use: NonProduction
   queueManager:
-    #image: cp.icr.io/cp/ibm-mqadvanced-server-integration:9.3.0.1-r1-amd64
     imagePullPolicy: Always
     storage:
       defaultClass: ibmc-block-gold
@@ -51,14 +50,9 @@ spec:
             - name: MQSNOAUT
               value: 'yes'
           name: qmgr
-  version: 9.3.0.3-r1
+  version: 9.3.2.0-r1
   web:
     enabled: false
-  tracing:
-    enabled: false
-    namespace: od
-    # collector:
-      # image: cp.icr.io/cp/icp4i/od/icp4i-od-collector:2.5.0-amd64@sha256:44460e67780a4166a07a36da10260d9497526afdd899af9ad745ac6197e92ca6
   pki:
     keys:
       - name: label1
