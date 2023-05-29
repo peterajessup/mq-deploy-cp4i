@@ -25,9 +25,9 @@ spec:
         enabled: true
         type: persistent-claim
     availability:
-      #type: MultiInstance
+      type: MultiInstance
       #type: SingleInstance
-      type: NativeHA
+      #type: NativeHA
     metrics:
       enabled: true
     resources:
