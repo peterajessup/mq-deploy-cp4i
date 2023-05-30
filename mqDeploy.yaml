@@ -4,6 +4,8 @@ metadata:
   name: mq1
   namespace: mq
 spec:
+securityContext:
+     supplementalGroups: [65534] # Change to 99 for clusters with RHEL7 or earlier worker nodes
   mqDashboard: true
   license:
     accept: true
@@ -16,18 +18,19 @@ spec:
     storage:
       defaultClass: ibmc-block-gold
       persistedData:
+        class: ibmc-file-gold-gid
         enabled: true
         type: persistent-claim
       queueManager:
         type: persistent-claim
       recoveryLogs:
-        class: ibmc-block-gold
+        class: ibmc-file-gold-gid
         enabled: true
         type: persistent-claim
     availability:
-      #type: MultiInstance
+      type: MultiInstance
       #type: SingleInstance
-      type: NativeHA
+      #type: NativeHA
     metrics:
       enabled: true
     resources:
