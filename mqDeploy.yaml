@@ -4,8 +4,8 @@ metadata:
   name: mq1
   namespace: mq
 spec:
-securityContext:
-     supplementalGroups: [65534] # Change to 99 for clusters with RHEL7 or earlier worker nodes
+  securityContext:
+    supplementalGroups: [65534] # Change to 99 for clusters with RHEL7 or earlier worker nodes
   mqDashboard: true
   license:
     accept: true
