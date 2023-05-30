@@ -28,6 +28,7 @@ spec:
         enabled: true
         type: persistent-claim
     availability:
+      updateStrategy: RollingUpdate
       type: MultiInstance
       #type: SingleInstance
       #type: NativeHA
