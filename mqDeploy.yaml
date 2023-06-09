@@ -52,7 +52,7 @@ spec:
       containers:
         - env:
             - name: MQSNOAUT
-              value: 'yes'
+              value: 'no'
           name: qmgr
   version: 9.3.1.0-r1
   web:
