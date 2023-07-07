@@ -33,7 +33,7 @@ spec:
       requests:
         cpu: '1'
         memory: 2Gi
-    name: QM1-CP4I1
+    name: QM1CP4I1
     mqsc:
     - configMap:
         name: mq1-mqsc
