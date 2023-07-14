@@ -10,7 +10,7 @@ spec:
   license:
     accept: true
     #license: L-APIG-CAUEBE
-    license: L-RJON-CD3JKX
+    license: L-RJON-CJR2TC
     metric: VirtualProcessorCore
     use: NonProduction
   queueManager:
