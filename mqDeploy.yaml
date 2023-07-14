@@ -45,7 +45,10 @@ spec:
         - env:
             - name: MQSNOAUT
               value: 'no'
+            - name: LOG_LEVEL
+              value: 'debug'
           name: qmgr
+        
   version: 9.3.1.0-r1
   web:
     enabled: true
