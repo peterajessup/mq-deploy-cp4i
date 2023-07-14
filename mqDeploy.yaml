@@ -4,6 +4,10 @@ metadata:
   name: mq1
   namespace: mq
 spec:
+  telemetry:
+    tracing:
+      instana:
+        enabled: true
   securityContext:
     supplementalGroups: [65534] # Change to 99 for clusters with RHEL7 or earlier worker nodes
   mqDashboard: true
@@ -45,8 +49,8 @@ spec:
         - env:
             - name: MQSNOAUT
               value: 'no'
-            - name: LOG_LEVEL
-              value: 'debug'
+            # - name: LOG_LEVEL
+            #  value: 'debug'
           name: qmgr
         
   version: 9.3.2.0-r1
