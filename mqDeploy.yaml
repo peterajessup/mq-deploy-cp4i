@@ -49,7 +49,7 @@ spec:
               value: 'debug'
           name: qmgr
         
-  version: 9.3.1.0-r1
+  version: 9.3.2.0-r1
   web:
     enabled: true
   pki:
