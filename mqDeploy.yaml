@@ -26,8 +26,8 @@ spec:
     availability:
       updateStrategy: RollingUpdate
       #type: MultiInstance
-      #type: SingleInstance
-      type: NativeHA
+      type: SingleInstance
+      #type: NativeHA
     metrics:
       enabled: true
     resources:
