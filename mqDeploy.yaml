@@ -24,7 +24,7 @@ spec:
       queueManager:
         type: persistent-claim
     availability:
-      updateStrategy: OnDelete
+      updateStrategy: RollingUpdate
       #type: MultiInstance
       #type: SingleInstance
       type: NativeHA
