@@ -20,7 +20,7 @@ spec:
   queueManager:
     imagePullPolicy: Always
     storage:
-      defaultClass: ibmc-bock-gold
+      defaultClass: ibmc-block-gold
       queueManager:
         type: persistent-claim
     availability:
