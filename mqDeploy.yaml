@@ -26,8 +26,8 @@ spec:
     availability:
       updateStrategy: RollingUpdate
       #type: MultiInstance
-      #type: SingleInstance
-      type: NativeHA
+      type: SingleInstance
+      #type: NativeHA
     metrics:
       enabled: true
     resources:
@@ -55,7 +55,7 @@ spec:
         
   version: 9.3.2.0-r1
   web:
-    enabled: true
+    enabled: false
   pki:
     keys:
       - name: label1
