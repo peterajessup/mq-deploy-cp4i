@@ -20,7 +20,7 @@ spec:
   queueManager:
     imagePullPolicy: Always
     storage:
-      defaultClass: ibmc-block-gold
+      defaultClass: ocs-storagecluster-cephfs
       queueManager:
         type: persistent-claim
     availability:
