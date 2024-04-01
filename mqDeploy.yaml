@@ -10,7 +10,6 @@ spec:
         enabled: true
   securityContext:
     supplementalGroups: [65534] # Change to 99 for clusters with RHEL7 or earlier worker nodes
-  mqDashboard: true
   license:
     accept: true
     #license: L-APIG-CAUEBE
