@@ -7,7 +7,7 @@ spec:
   telemetry:
     tracing:
       instana:
-        enabled: true
+        enabled: false
   securityContext:
     supplementalGroups: [65534] # Change to 99 for clusters with RHEL7 or earlier worker nodes
   license:
