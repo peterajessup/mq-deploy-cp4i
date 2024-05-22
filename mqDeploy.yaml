@@ -19,7 +19,7 @@ spec:
   queueManager:
     imagePullPolicy: Always
     storage:
-      defaultClass: ocs-storagecluster-cephfs
+      defaultClass: ibmc-block-gold
       queueManager:
         type: persistent-claim
     availability:
@@ -52,7 +52,7 @@ spec:
               value: 'debug'
           name: qmgr
         
-  version: 9.3.5.0-r1
+  version: 9.3.4.1-r1
   web:
     enabled: true
   pki:
