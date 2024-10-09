@@ -54,7 +54,7 @@ spec:
         
   version: 9.4.0.0-r3
   web:
-    enabled: flase
+    enabled: false
   pki:
     keys:
       - name: label1
