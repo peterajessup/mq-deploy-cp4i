@@ -13,7 +13,7 @@ spec:
   license:
     accept: true
     #license: L-APIG-CAUEBE
-    license: L-VTPK-22YZPK
+    license: L-JTPV-KYG8TF
     metric: VirtualProcessorCore
     use: NonProduction
   queueManager:
@@ -52,9 +52,9 @@ spec:
               value: 'debug'
           name: qmgr
         
-  version: 9.3.0.0-r1
+  version: 9.4.0.0-r3
   web:
-    enabled: true
+    enabled: flase
   pki:
     keys:
       - name: label1
