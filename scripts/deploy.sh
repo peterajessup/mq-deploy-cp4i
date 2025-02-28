@@ -3,7 +3,7 @@ oc project mq
 set +e
 # Remove the runnning queue manager instance (if any)
 
-oc delete QueueManager mq1
+oc delete QueueManager sydqm melqm
 
 # Delete the route object and secret for the QueueManager keystore (if any), and the mqsc configMap
 oc delete route mq1route
