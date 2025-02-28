@@ -1,0 +1,45 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: melqm
+  annotations:
+    com.ibm.mq/write-defaults-spec: 'false'
+  namespace: mq
+spec:
+  license:
+    accept: true
+    license: L-NUUP-23NH8Y
+    use: Production
+  web:
+    enabled: false
+  pki:
+    keys:
+      - name: label1
+        secret:
+          secretName: mq1key
+          items:
+            - tls.key
+            - tls.crt
+  queueManager:
+    name: QM1
+    availability:
+      nativeHAGroups:
+        local:
+          tls:
+            key:
+              secretName: melkey
+          name: melbourne
+          role: Recovery
+        remotes:
+          - addresses:
+              - sydqm-ibm-mq.mq.svc
+            trust:
+              - secret:
+                  secretName: tls-syd
+            name: sydney
+      type: NativeHA
+    storage:
+      queueManager:
+        type: persistent-claim
+      defaultClass: ocs-storagecluster-cephfs
+  version: 9.4.2.0-r1
