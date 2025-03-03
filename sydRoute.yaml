@@ -4,7 +4,7 @@ metadata:
   name: sydroute 
   namespace: mq 
 spec:
-  host: tls.chl.mq.ibm.com
+  host: tls1.chl.mq.ibm.com
   to:
     kind: Service
     name: sydqm-ibm-mq 

@@ -7,7 +7,7 @@ metadata:
   namespace: mq
 spec:
   license:
-    accept: false
+    accept: true
     license: L-NUUP-23NH8Y
     use: Production
   web:
@@ -27,6 +27,11 @@ spec:
         name: mq1-mqsc
         items:
         - ivt.mqsc
+    ini:
+    - configMap:
+        name: mq1-mqsc
+        items:
+        - mq.ini
     availability:
       nativeHAGroups:
         local:
