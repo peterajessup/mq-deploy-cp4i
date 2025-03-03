@@ -1,4 +1,4 @@
-# cp4idemomq
+# CRR MQ Native HA Demonstration
 
 This repository is to be used for creating two NativeHA MQ Queue Managers on OCP for the purposes of Demonstrating Cross region recovery.
 All artefacts are present for the complete demonstration.
