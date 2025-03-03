@@ -1,0 +1,55 @@
+{
+  "channel":
+  [
+    {
+      "general":
+      {
+        "description": "TLS CHANNEL for mq1"
+      },
+      "name": "TLS1",
+      "clientConnection":
+      {
+        "connection":
+        [
+          {
+            "host": "sydqm-ibm-mq-qm-mq.apps.67bbd77d2e78454305578351.ap1.techzone.ibm.com",
+            "port": 443 
+          }
+        ],
+        "queueManager": "QM1"
+      },
+      "transmissionSecurity":
+      {
+        "cipherSpecification": "ANY_TLS12_OR_HIGHER",
+        "certificateLabel": "label1",
+        "certificatePeerName": ""
+      },
+      "type": "clientConnection"
+    },
+    {
+      "general":
+      {
+        "description": "TLS CHANNEL for mq1"
+      },
+      "name": "TLS",
+      "clientConnection":
+      {
+        "connection":
+        [
+          {
+            "host": "melqm-ibm-mq-qm-mqdr.apps.67bbd77d2e78454305578351.ap1.techzone.ibm.com",
+            "port": 443 
+          }
+        ],
+        "queueManager": "QM1"
+      },
+      "transmissionSecurity":
+      {
+        "cipherSpecification": "ANY_TLS12_OR_HIGHER",
+        "certificateLabel": "label1",
+        "certificatePeerName": ""
+      },
+      "type": "clientConnection"
+    }
+]
+}
