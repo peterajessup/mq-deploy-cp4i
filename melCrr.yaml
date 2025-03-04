@@ -48,6 +48,7 @@ spec:
               - secret:
                   secretName: tls-syd
             name: sydney
+            enabled: true
       type: NativeHA
     storage:
       queueManager:
