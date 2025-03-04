@@ -47,6 +47,7 @@ spec:
               - secret:
                   secretName: tls-mel
             name: melbourne
+            enabled: true
       type: NativeHA
     storage:
       queueManager:
