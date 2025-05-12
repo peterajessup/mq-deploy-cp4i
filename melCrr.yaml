@@ -53,5 +53,5 @@ spec:
     storage:
       queueManager:
         type: persistent-claim
-      defaultClass: ocs-storagecluster-cephfs
+      defaultClass: ocs-external-storagecluster-cephfs
   version: 9.4.2.0-r1
